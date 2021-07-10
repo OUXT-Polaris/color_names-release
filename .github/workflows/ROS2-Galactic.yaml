@@ -1,5 +1,5 @@
 
-name: ROS2-Foxy
+name: ROS2-Galactic
 
 on:
   schedule:
@@ -22,8 +22,8 @@ jobs:
                   curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
                   sudo sh -c 'echo "deb [arch=amd64,arm64] http://packages.ros.org/ros2/ubuntu `lsb_release -cs` main" > /etc/apt/sources.list.d/ros2-latest.list'
                   sudo apt update
-                  sudo apt install ros-foxy-desktop
-                  source /opt/ros/foxy/setup.bash
+                  sudo apt install ros-galactic-desktop
+                  source /opt/ros/galactic/setup.bash
             - uses: actions/checkout@v2-beta
             - name: Copy repository
               run: |
@@ -31,7 +31,7 @@ jobs:
                   cp -rf . ~/ros2_ws/src/color_names
             - name: Install dependencies
               run: |
-                  source /opt/ros/foxy/setup.bash
+                  source /opt/ros/galactic/setup.bash
                   sudo apt install -y python3-rosdep python3-vcstool python3-sphinx-rtd-theme 
                   sudo rosdep init
                   rosdep update
@@ -41,7 +41,7 @@ jobs:
                   rosdep install -r -y --from-paths . --ignore-src
             - name: Build packages
               run: |
-                  source /opt/ros/foxy/setup.bash
+                  source /opt/ros/galactic/setup.bash
                   # Install colcon
                   # Ref: https://index.ros.org/doc/ros2/Tutorials/Colcon-Tutorial/
                   sudo apt install python3-colcon-common-extensions
@@ -50,7 +50,7 @@ jobs:
                   source ~/ros2_ws/install/setup.bash
             - name: Test packages
               run: |
-                  source /opt/ros/foxy/setup.bash
+                  source /opt/ros/galactic/setup.bash
                   source ~/ros2_ws/install/setup.bash
                   cd ~/ros2_ws
                   colcon test
