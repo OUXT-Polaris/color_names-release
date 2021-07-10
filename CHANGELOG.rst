@@ -2,6 +2,23 @@
 Changelog for package color_names
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.2 (2021-07-10)
+------------------
+* Merge pull request `#12 <https://github.com/OUXT-Polaris/color_names/issues/12>`_ from OUXT-Polaris/workflow/galactic
+  update CI workflow for galactic
+* update .github/workflows/ROS2-Galactic.yaml
+* Merge pull request `#10 <https://github.com/OUXT-Polaris/color_names/issues/10>`_ from OUXT-Polaris/workflow/foxy
+  update CI workflow for foxy
+* update .github/workflows/ROS2-Foxy.yaml
+* Merge pull request `#9 <https://github.com/OUXT-Polaris/color_names/issues/9>`_ from OUXT-Polaris/workflow/dashing
+  update CI workflow for dashing
+* update .github/workflows/ROS2-Dashing.yaml
+* update dependency.repos
+* Merge pull request `#7 <https://github.com/OUXT-Polaris/color_names/issues/7>`_ from OUXT-Polaris/feature/foxy
+  enable pass colcon test
+* enable pass colcon test
+* Contributors: Masaya Kataoka, robotx_buildfarm
+
 0.0.1 (2021-01-10)
 ------------------
 * Merge pull request `#6 <https://github.com/OUXT-Polaris/color_names/issues/6>`_ from OUXT-Polaris/feature/remove_document_generator

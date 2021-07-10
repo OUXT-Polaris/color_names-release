@@ -25,12 +25,14 @@ THE SOFTWARE.
  * @brief Preset Color names
  */
 
-#ifndef INCLUDE_COLOR_NAMES_COLOR_NAMES_H
-#define INCLUDE_COLOR_NAMES_COLOR_NAMES_H
+#ifndef COLOR_NAMES__COLOR_NAMES_HPP_
+#define COLOR_NAMES__COLOR_NAMES_HPP_
+
+#include <std_msgs/msg/color_rgba.hpp>
 
 #include <cassert>
+#include <string>
 #include <map>
-#include <std_msgs/msg/color_rgba.hpp>
 
 namespace color_names
 {
@@ -40,9 +42,8 @@ std_msgs::msg::ColorRGBA makeColorMsg(std::string preset_name, double alpha = 1.
    */
 std_msgs::msg::ColorRGBA fromHsv(double h, double s, double v, double alpha = 1.0);
 
-///@todo Read data from text data?
-const std::map<std::string, std::array<float, 3>> COLOR_NAME_DICT{
-  //{"COLOR_NAME", {R, G, B}} //template
+const std::map<std::string, std::array<float, 3>> COLOR_NAME_DICT {
+  //  {"COLOR_NAME", {R, G, B}} //template
   {"aliceblue", {0.941176, 0.972549, 1}},
   {"antiquewhite", {0.980392, 0.921569, 0.843137}},
   {"aqua", {0, 1, 1}},
@@ -183,8 +184,9 @@ const std::map<std::string, std::array<float, 3>> COLOR_NAME_DICT{
   {"whitesmoke", {0.960784, 0.960784, 0.960784}},
   {"yellow", {1, 1, 0}},
   {"yellowgreen", {0.603922, 0.803922, 0.196078}},
-  {"ERROR", {0, 0, 0}}};
+  {"ERROR", {0, 0, 0}}
+};
 
 }  // namespace color_names
 
-#endif
+#endif  // COLOR_NAMES__COLOR_NAMES_HPP_
