@@ -2,6 +2,40 @@
 Changelog for package color_names
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.3 (2022-01-15)
+------------------
+* Setup workflow (`#32 <https://github.com/OUXT-Polaris/color_names/issues/32>`_)
+* Setup workflow (`#31 <https://github.com/OUXT-Polaris/color_names/issues/31>`_)
+* Setup workflow (`#30 <https://github.com/OUXT-Polaris/color_names/issues/30>`_)
+* Setup workflow (`#29 <https://github.com/OUXT-Polaris/color_names/issues/29>`_)
+* Setup workflow (`#28 <https://github.com/OUXT-Polaris/color_names/issues/28>`_)
+* Setup workflow (`#27 <https://github.com/OUXT-Polaris/color_names/issues/27>`_)
+* Setup workflow (`#26 <https://github.com/OUXT-Polaris/color_names/issues/26>`_)
+* Setup workflow (`#25 <https://github.com/OUXT-Polaris/color_names/issues/25>`_)
+* Setup workflow (`#24 <https://github.com/OUXT-Polaris/color_names/issues/24>`_)
+* Setup build test workflow (`#23 <https://github.com/OUXT-Polaris/color_names/issues/23>`_)
+* Setup build test workflow (`#22 <https://github.com/OUXT-Polaris/color_names/issues/22>`_)
+* Setup build test workflow (`#21 <https://github.com/OUXT-Polaris/color_names/issues/21>`_)
+* Merge pull request `#20 <https://github.com/OUXT-Polaris/color_names/issues/20>`_ from OUXT-Polaris/workflow/build_test
+  [Bot] Update workflow
+* add copyright
+* update LICENSE
+* enable pass flak8
+* remove old CI
+* remove unused lines
+* add test_depend
+* apply reformat
+* Setup build test workflow
+* Setup scenario test workflow (`#19 <https://github.com/OUXT-Polaris/color_names/issues/19>`_)
+* Setup scenario test workflow (`#18 <https://github.com/OUXT-Polaris/color_names/issues/18>`_)
+* Setup scenario test workflow (`#17 <https://github.com/OUXT-Polaris/color_names/issues/17>`_)
+* Setup scenario test workflow (`#16 <https://github.com/OUXT-Polaris/color_names/issues/16>`_)
+* Setup scenario test workflow (`#14 <https://github.com/OUXT-Polaris/color_names/issues/14>`_)
+* Merge pull request `#13 <https://github.com/OUXT-Polaris/color_names/issues/13>`_ from OUXT-Polaris/workflow/scenario_test
+  [Bot] Update workflow
+* Setup scenario test workflow
+* Contributors: Masaya Kataoka, wam-v-tan
+
 0.0.2 (2021-07-10)
 ------------------
 * Merge pull request `#12 <https://github.com/OUXT-Polaris/color_names/issues/12>`_ from OUXT-Polaris/workflow/galactic
