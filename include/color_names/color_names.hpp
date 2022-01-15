@@ -1,24 +1,16 @@
-/*
-Copyright (c) 2019 shuhei yoshida
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-*/
+// Copyright (c) 2020 OUXT Polaris
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
 
 /**
  * @file color_names.h
@@ -28,11 +20,10 @@ THE SOFTWARE.
 #ifndef COLOR_NAMES__COLOR_NAMES_HPP_
 #define COLOR_NAMES__COLOR_NAMES_HPP_
 
-#include <std_msgs/msg/color_rgba.hpp>
-
 #include <cassert>
-#include <string>
 #include <map>
+#include <std_msgs/msg/color_rgba.hpp>
+#include <string>
 
 namespace color_names
 {
@@ -42,7 +33,7 @@ std_msgs::msg::ColorRGBA makeColorMsg(std::string preset_name, double alpha = 1.
    */
 std_msgs::msg::ColorRGBA fromHsv(double h, double s, double v, double alpha = 1.0);
 
-const std::map<std::string, std::array<float, 3>> COLOR_NAME_DICT {
+const std::map<std::string, std::array<float, 3>> COLOR_NAME_DICT{
   //  {"COLOR_NAME", {R, G, B}} //template
   {"aliceblue", {0.941176, 0.972549, 1}},
   {"antiquewhite", {0.980392, 0.921569, 0.843137}},
@@ -184,8 +175,7 @@ const std::map<std::string, std::array<float, 3>> COLOR_NAME_DICT {
   {"whitesmoke", {0.960784, 0.960784, 0.960784}},
   {"yellow", {1, 1, 0}},
   {"yellowgreen", {0.603922, 0.803922, 0.196078}},
-  {"ERROR", {0, 0, 0}}
-};
+  {"ERROR", {0, 0, 0}}};
 
 }  // namespace color_names
 
