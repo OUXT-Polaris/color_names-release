@@ -1,0 +1,12 @@
+Source: ros-rolling-color-names
+Section: misc
+Priority: optional
+Maintainer: masaya <ms.kataoka@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-rolling-ament-cmake, ros-rolling-ament-lint-auto, ros-rolling-ouxt-lint-common, ros-rolling-rclcpp, ros-rolling-rviz2, ros-rolling-std-msgs, ros-rolling-visualization-msgs, ros-rolling-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-rolling-color-names
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-rolling-rclcpp, ros-rolling-rviz2, ros-rolling-std-msgs, ros-rolling-visualization-msgs, ros-rolling-ros-workspace
+Description: The color_names package
