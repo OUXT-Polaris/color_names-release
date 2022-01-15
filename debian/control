@@ -1,0 +1,12 @@
+Source: ros-galactic-color-names
+Section: misc
+Priority: optional
+Maintainer: masaya <ms.kataoka@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-galactic-ament-cmake, ros-galactic-ament-lint-auto, ros-galactic-ouxt-lint-common, ros-galactic-rclcpp, ros-galactic-rviz2, ros-galactic-std-msgs, ros-galactic-visualization-msgs, ros-galactic-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-galactic-color-names
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-galactic-rclcpp, ros-galactic-rviz2, ros-galactic-std-msgs, ros-galactic-visualization-msgs, ros-galactic-ros-workspace
+Description: The color_names package
